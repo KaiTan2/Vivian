@@ -127,6 +127,7 @@
                 var offset = canvas.offset(), x, y;
                 x = e.pageX - offset.left;
                 y = e.pageY - offset.top;
+                document.getElementById('media').play();
                 if (seed.hover(x, y)) {
                     hold = 0;
                     canvas.unbind("click");
